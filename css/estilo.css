@@ -1,0 +1,44 @@
+.perfilpostagem{
+width: 80px
+
+}
+.perfilpostagemcomentario{
+    width: 64px;
+    height: 64px;
+}
+.perfilpostagemcomentario:hover{
+    transform: scale(1.2);
+}
+.comentario{
+ margin-left: 5%;
+ border-width: 5px;
+ border-color: black;
+
+}
+.postagem{
+   width: 700px; 
+}
+.afastamento{
+    margin-top: 5%;
+}
+.afastamentocomentarios{
+    margin-top: 2px;
+}
+.textopostagens{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.linkuser{
+    text-align: left;
+}
+.postagem:hover {
+    transform: scale(1.1); /* (150% zoom - na imagem)*/
+}
+.perfilpostagem:hover{
+    transform: scale(1.1);
+}
+.numnotificacoes{
+ background-color: #007bff;
+ color: aliceblue;
+}
