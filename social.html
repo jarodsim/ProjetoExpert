@@ -66,6 +66,131 @@
         <a class="nav-link" href="perfil.html">Perfil</a>
       </li>
     </ul>
+                <!--Campo para postar-->
+
+                <div class="card afastamento">
+                    <div class="card-body">
+                      <blockquote class="card-text">O que você esta programando?</blockquote>
+                      <!-- Button trigger modal -->
+                      <form>
+                          <div class="form-group">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              
+                            </div>
+                      </form>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                          Publicar
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="alert alert-danger" role="alert">
+                                      Tem certeza que deseja efetuar esse publicação?
+
+                                      <p class="termosecondicoes"><a href="termosecondições.html">Termos e Condições</a></p>
+                                    </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary"  data-dismiss="modal">Publicar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      <!--Modal para multimidias-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Imagem/Vídeo
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!--Modal para Código-->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Código
+          </button>
+          
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--Modal para Link-->
+
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            link
+          </button>
+          
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+                    </div>
+                  </div>
+
+
+
+
     <!--inicio das postagens-->
     <div class="afastamento">
       <div class="media">
@@ -90,7 +215,7 @@
 
       </div>
 
-      <div class="comentario">
+      <div class="comentario afastamento">
         <!--Chamada dos comentarios-->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
           <p class="text-uppercase">Comentários
@@ -113,9 +238,9 @@
                   <div class="shadow-sm p-3 mb-5 bg-white rounded">sabe de nada, kkkkk
                     <!--Botao para responder-->
                     <button type="button" class="btn btn-primary text-white bg-dark rounded" data-toggle="modal" data-target="#exampleModal"
-                      data-whatever="@getbootstrap">Responder</button>
+                      data-whatever="@mdo">Responder</button>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade " id="exampleModal exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel exampleModalLongTitle" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
