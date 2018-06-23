@@ -67,126 +67,137 @@
       </li>
     </ul>
                 <!--Campo para postar-->
+                <div class="afastamento">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"><h5>O que você está    programando?</h5></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                      </div>
 
-                <div class="card afastamento">
-                    <div class="card-body">
-                      <blockquote class="card-text">O que você esta programando?</blockquote>
-                      <!-- Button trigger modal -->
-                      <form>
-                          <div class="form-group">
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                              
-                            </div>
-                      </form>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                          Publicar
-                        </button>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Publicar</button>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Comfirmação</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="alert alert-danger" role="alert">
+                                  <p>Tem Certeza que deseja publicar essa postagem?</p>
+                                  <blockquote a class="termosecondicoes" >Essa postagem poderá ser vista por qualquer usuário.</blockquote>
+                                  <blockquote a class="termosecondicoes" >Para mais informações sobre privacidade visite nossos <a class="termosecondicoes" href="termosecondicoes.html">termos e Condições</a></blockquote>
+                                </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Publicar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                      <!--Multimidia-->
+                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal1">Multimidia</button>
+
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar">
+                                <h5 class="modal-title" id="exampleModalLabel">Compartilhar Multimidia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
                               <div class="modal-body">
-                                  <div class="alert alert-danger" role="alert">
-                                      Tem certeza que deseja efetuar esse publicação?
-
-                                      <p class="termosecondicoes"><a href="termosecondições.html">Termos e Condições</a></p>
-                                    </div>
+                                  <form>
+                                      <div class="form-group">
+                                        <label for="exampleFormControlFile1">Selecionar arquivo</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                      </div>
+                                    </form>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary"  data-dismiss="modal">Publicar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Publicar</button>
                               </div>
                             </div>
                           </div>
                         </div>
 
 
-                      <!--Modal para multimidias-->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Imagem/Vídeo
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-        <!--Modal para Código-->
+                      <!--Links-->
+                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal2">link</button>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Código
-          </button>
-          
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Compartilhar Links</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="input-group mb-3">
+                                      <input type="text" class="form-control" placeholder="www.mehowup" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                      <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"><input type="text"  placeholder=".com"  class="form-control"></span>
+                                      </div>
+                                    </div>
+                                        <!--add Mais links-->
+                                    <div class="dropdown btn-group">
+                                      <button class="btn btn-secondary dropdown-toggle btn-success" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Mais Links
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                          <h6 class="dropdown-header">Você pode adicionar quais quer tipos de links na aba "Outros links"</h6>
+                                        <div class="input-group mb-3 dropdown-item">
+                                          <input type="text" class="form-control" placeholder="www.mehowup" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                          <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><input type="text"  placeholder=".com"  class="form-control"></span>
+                                          </div>
+                                        </div>
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!--Modal para Link-->
+                                        <div class="input-group mb-3 dropdown-item">
+                                          <input type="text" class="form-control" placeholder="www.mehowup" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                          <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><input type="text"  placeholder=".com"  class="form-control"></span>
+                                          </div>
+                                        </div>
 
+                                        <div class="input-group mb-3 dropdown-item">
+                                          <input type="text" class="form-control" placeholder="www.mehowup" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                          <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><input type="text"  placeholder=".com"  class="form-control"></span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            link
-          </button>
-          
+                                          <!--Outros Links-->
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Outros Links
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                  <input type="text" class="form-control" placeholder="www.exemplo.git" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                  <div class="input-group-append">
+                                              </div>
+                                            </div>
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Publicar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                 </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-                    </div>
-                  </div>
 
 
 
@@ -214,9 +225,9 @@
         </div>
 
       </div>
-
+                        <!--Chamada dos comentarios-->
       <div class="comentario afastamento">
-        <!--Chamada dos comentarios-->
+        
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
           <p class="text-uppercase">Comentários
             <span class="badge numnotificacoes">2</span>
@@ -226,7 +237,7 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
-              <!--Comentarios-->
+                                  <!--Comentarios-->
               <div class="media">
                 <a href="user1.html">
                   <img class="mr-3 perfilpostagemcomentario" src="imgs/pessoa2.jpg" alt="Generic placeholder image">
@@ -236,25 +247,21 @@
                     <h6 class="mt-0">Coraline</h6>
                   </a>
                   <div class="shadow-sm p-3 mb-5 bg-white rounded">sabe de nada, kkkkk
-                    <!--Botao para responder-->
-                    <button type="button" class="btn btn-primary text-white bg-dark rounded" data-toggle="modal" data-target="#exampleModal"
+                                                  <!--Botao para responder-->
+                    <button type="button" class="btn btn-primary text-white bg-dark rounded" data-toggle="modal" data-target="#exampleModalresponder"
                       data-whatever="@mdo">Responder</button>
 
-                    <div class="modal fade " id="exampleModal exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade " id="exampleModalresponder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Resposta</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Responder</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
                             <form>
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Resposta para:!Coraline</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="!Coraline">
-                              </div>
                               <div class="form-group">
                                 <label for="message-text" class="col-form-label">Resposta:</label>
                                 <textarea class="form-control" id="message-text"></textarea>
@@ -269,7 +276,7 @@
                       </div>
                     </div>
 
-                    <!--<Fim do botao para responder-->
+                    <!--<Fim do botao para responder o primeiro comenmtario-->
                   </div>
 
                 </div>
@@ -284,43 +291,14 @@
                     <h6 class="mt-0 ">Anne</h6>
                   </a>
                   <div class="shadow-sm p-3 mb-5 bg-white rounded">Tem algo de errado aí, kkkkk
-                    <!--Botao para responder-->
-                    <button type="button" class="btn btn-primary text-white bg-dark rounded" data-toggle="modal" data-target="#exampleModal"
+                    <!--Botao para responder segundo comentario. Ele chama o msm modal para a primeira resposta-->
+                    <button type="button" class="btn btn-primary text-white bg-dark rounded" data-toggle="modal" data-target="#exampleModalresponder"
                       data-whatever="@getbootstrap">Responder</button>
-
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Resposta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Resposta para:!Anne</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="!Anne">
-                              </div>
-                              <div class="form-group">
-                                <label for="message-text" class="col-form-label">Resposta:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Responder</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                     <!--<Fim do botao para responder-->
                   </div>
-
                 </div>
+
+                
               </div>
             </div>
           </div>
