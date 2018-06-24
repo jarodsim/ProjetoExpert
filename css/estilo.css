@@ -1,3 +1,4 @@
+
 .perfilpostagem{
 width: 80px
 
@@ -44,5 +45,14 @@ width: 80px
 }
 .termosecondicoes{
     font-size: 10px;
+    
+}
+.outroslink{
+    text-decoration: none;
+    
+}
+.postagems-direita{
+    margin-left: 600px;
+    margin-top: -300px;
     
 }
