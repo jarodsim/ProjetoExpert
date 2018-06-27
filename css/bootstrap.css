@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #FFFFFF !important;
 }
 
 [tabindex="-1"]:focus {
@@ -161,7 +161,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #505861 !important;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -3896,7 +3896,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #ACB8C4 !important;
 }
 
 .nav-fill .nav-item {
