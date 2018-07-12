@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pergunta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilofooter.css">
+
+    <link href="fontawesome-free-5.1.0-web/css/all.css" rel="stylesheet" type="text/css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded   ">
+        <a class="navbar-brand" href="index.html">Expert Technologies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <span class="navbar-text">
+                    "Pense Diferente - Steve Jobs"
+                </span>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" style="padding-left: 10px;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="forum.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opções</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Marcadas</a>
+                    <a class="dropdown-item" href="#">Buscar User</a>
+                    <a class="dropdown-item" href="#">Buscar Pergunta</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="social.html">SocialEx</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="notificacoesforum">Notificações</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="Ajudaforum.html">Ajuda</a>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-3">
+                <div class="card afastamento">
+                    <div class="card-header">
+                        <a href="user1.html" class="outroslinks">
+                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 50px;">Aninha</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Usar o Bootstrap</h5>
+                        <p class="card-text">Alguém pode me ajudar a usar o bootstrap?</p>
+                        <div>
+                            <span class="badge badge-secondary  badge-info">
+                                <h6>Html</h6>
+                            </span>
+                            <span class="badge badge-secondary  badge-light">
+                                <h6>Css</h6>
+                            </span>
+                            <span class="badge badge-secondary badge-warning">
+                                <h6>Js</h6>
+                            </span>
+                            <span class="badge badge-secondary">
+                                <h6>Bootstrap</h6>
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <span>2 dias trás</span>
+                            <span>| 3 respostas</span>
+                            <span>| 4 favoritos</span>
+                            <span>| 12 Marcações</span>
+                            <span>| 1 deslike</span>
+                        </div>
+                        <!--Inicio das respostas-->
+                        <hr>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="exampleFormControlTextarea1">
+                                <h5 style="color:indigo; font-size: 20px;">Responda</h5>
+                            </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Responder</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="alert alert-danger" role="alert">
+                                            <blockquote a class="termosecondicoes">Essa resposta poderá ser vista por qualquer usuário.</blockquote>
+                                            <blockquote a class="termosecondicoes">Para mais informações sobre privacidade visite nossos
+                                                <a class="termosecondicoes" href="termosecondicoes.html">termos e Condições</a>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-dark" data-dismiss="modal">Publicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="afastamento" style="color:indigo; font-size: 20px;">Respostas
+                            <i class="fas fa-arrow-circle-down"></i>
+                        </div>
+                        <hr>
+                        <div class="card afastamento">
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <a href="user1.html" class="outroslinks">
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 30px;">Max</a>
+                                </div>
+                                <div style="margin-left: 20px;"> Existem tutoriais no Youtube!.</div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-bookmark" onclick=""> Marcar</i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-retweet" onclick="">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCentera">Responder</button>
+                                    </i>
+                                </a>
+                                <span style="margin-left: 5px; font-size: 20px; ">votar</span>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--Segunda resposta-->
+                        <div class="card afastamento">
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <a href="user1.html" class="outroslinks">
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 30px;">Max</a>
+                                </div>
+                                <p class="card-text" style="margin-left: 25px;">Segue esses passos</p>
+                                <img class="card-img-top" style="margin-top: 10px;" src="imgs/slideforum2.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Usa o sistema de grid</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Birra</li>
+                                    <li class="list-group-item">Fique puto</li>
+                                    <li class="list-group-item">Vá no youtube</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h6>Aqui vai alguns links</h6>
+                                    <a href="https://www.youtube.com/watch?v=8sU-IVaQYgk" target="_blanck" class="card-link">Sistema de grids</a>
+                                    <a href="https://www.youtube.com/watch?v=tq3ZtBiYoqE" target="_blanck" class="card-link">Botstrap</a>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-bookmark" onclick=""> Marcar</i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-retweet" onclick="">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCentera">Responder</button>
+                                    </i>
+                                </a>
+                                <span style="margin-left: 5px; font-size: 20px; ">votar</span>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--Terceira resposta-->
+                        <div class="card afastamento">
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <a href="user1.html" class="outroslinks">
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 30px;">Max</a>
+                                </div>
+                                <div style="margin-left: 20px;"> N sei n.</div>
+                            </div>
+                            <div class="card-footer ">
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-bookmark" onclick=""> Marcar</i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-retweet" onclick="">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCentera">Responder</button>
+                                    </i>
+                                </a>
+                                <span style="margin-left: 5px; font-size: 20px; ">votar</span>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Modal para responder resposta-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCentera" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Responder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--inicio card body-->
+                    <label for="exampleFormControlTextarea1">
+                        <h5 style="color:indigo; font-size: 20px;">Responda</h5>
+                    </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalb">Responder</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-danger" role="alert">
+                                        <blockquote a class="termosecondicoes">Essa resposta poderá ser vista por qualquer usuário.</blockquote>
+                                        <blockquote a class="termosecondicoes">Para mais informações sobre privacidade visite nossos
+                                            <a class="termosecondicoes" href="termosecondicoes.html">termos e Condições</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fim do card body-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Concluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim do modal para responder respostas-->
+    <!--Modal para publicar resposta de comentario-->
+    <div class="modal fade" id="exampleModalb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger" role="alert">
+                            <blockquote a class="termosecondicoes">Resposta Publicada.</blockquote>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Fim modal para publicar resposta de comentario-->
+</body>
+
+</html>

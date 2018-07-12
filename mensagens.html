@@ -65,6 +65,80 @@
       </li>
     </ul>
     <div class="row">
+      <div class="col-md-12 col-ms6 col-xs-6 afastamento">
+        <div class="card">
+          <div class="card-body">
+            <!-- Enviar MEnsagem -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenterc">
+              Enviar Mensagem
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenterc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Enviar Mensagem</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <h6>Nome de usuário ou Email</h6>
+                            <input class="form-control form-control-sm" type="text" placeholder="!aninha">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 ml-auto">
+                          <label for="exampleFormControlTextarea1">Mensagem</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-dark" style="margin-bottom: 9px; margin-left: 15px;" data-toggle="modal" data-target="#exampleModald">Multimidia</button>
+                        <div class="modal fade" id="exampleModald" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Compartilhar Multimidia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlFile1">Selecionar arquivo</label>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-dark" data-dismiss="">Enviar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <div class="col-xs-12 col-sm-12 col-md-4 wow bounceInLeft afastamento">
         <!--Primeira notificação-->
         <div class="card w-100">
@@ -81,7 +155,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <img src="imgs/pessoa1.png" alt="perfil" width="30px">
+                    <img src="imgs/pessoa1.png" alt="perfil" width="45px">
                     <a href="user1.html" class="btn btn-light">
                       <h5 class="modal-title" id="exampleModalLabel">Coraline</h5>
                     </a>
@@ -89,7 +163,7 @@
                     <!--opções-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalb">
+                    <button type="button" class="btn btn-dark" style="margin-left: 10px;" data-toggle="modal" data-target="#exampleModalb">
                       Opções
                     </button>
 
@@ -109,7 +183,7 @@
                               <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Bloquear</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                     </button>
@@ -214,7 +288,7 @@
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1" class="btn btn-light">Resposta</label>
                       <!--Multimidia-->
-                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal1">Multimidia</button>
+                      <button type="button" class="btn btn-dark" style="margin-bottom: 9px;" data-toggle="modal" data-target="#exampleModal1">Multimidia</button>
 
                       <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
