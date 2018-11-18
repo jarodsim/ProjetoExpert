@@ -1,124 +1,207 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ExForum</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/estilofooter.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ExForum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/estilofooter.css">
 
-    <link href="fontawesome-free-5.1.0-web/css/all.css" rel="stylesheet" type="text/css">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-</head>
+        <link href="fontawesome-free-5.1.0-web/css/all.css" rel="stylesheet" type="text/css">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    </head>
 
-<body>
-    <!--NavsBar-->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded   ">
-        <a class="navbar-brand" href="index.html">Expert Technologies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Quem somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <span class="navbar-text">
-                    "Pense Diferente - Steve Jobs"
-                </span>
-            </ul>
-            <form class="form-inline my-2 my-lg-0" style="padding-left: 10px;">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-        </div>
-    </nav>
-    <!--Navlink-->
-    <div class="container">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="forum.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opções</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Marcadas</a>
-                    <a class="dropdown-item" href="#">Buscar User</a>
-                    <a class="dropdown-item" href="#">Buscar Pergunta</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="social.html">SocialEx</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="notificacoesforum">Notificações</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="Ajudaforum.html">Ajuda</a>
-            </li>
-        </ul>
-
-        <div class="row">
-            <div id="carouselExampleControls" class="carousel slide " style="padding-top: 2%" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="perguntaforum.html"><img class="d-block w-100" src="imgs/slideforum1.png" alt="First slide" style="height: 200px;"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="perguntaforum.html"><img class="d-block w-100" src="imgs/slideforum2.png" alt="Second slide" style="height: 200px;"></a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
+    <body>
+        <!--NavsBar-->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded   ">
+            <a class="navbar-brand" href="index.html">Expert Technologies</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <span class="navbar-text">
+                        "Pense Diferente - Steve Jobs"
+                    </span>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" style="padding-left: 10px;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </div>
-
-            <div class="col-md-8 col-sm-8 col-xs-3">
-                <div class="card afastamento">
-                    <div class="card-header">
-                        <a href="user1.html" class="outroslinks">
-                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 50px;">Aninha</a>
+        </nav>
+        <!--Navlink-->
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="forum.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opções</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Marcadas</a>
+                        <a class="dropdown-item" href="#">Buscar User</a>
+                        <a class="dropdown-item" href="#">Buscar Pergunta</a>
+                        <a class="dropdown-item" href="admforum.html">Criar Forum</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="social.html">SocialEx</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notificacoesforum">Notificações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Ajudaforum.html">Ajuda</a>
+                </li>
+            </ul>
+            <!--IniCio navegação de tags-->
+            <div class="col-md-12 col-sm-12 col-xs-8" style="margin-top: 2%;">
+                <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Usar o Bootstrap</h5>
-                        <p class="card-text">Alguém pode me ajudar a usar o bootstrap?</p>
-                        <div>
-                            <span class="badge badge-secondary  badge-info">
+                        <span class="badge badge-secondary badge-info">
+                            <a href="" style="color: white !important;">
                                 <h6>Html</h6>
-                            </span>
-                            <span class="badge badge-secondary  badge-light">
+                            </a>
+                        </span>
+                        <span class="badge badge-secondary badge-light">
+                            <a href="" style="color:black !important;">
                                 <h6>Css</h6>
-                            </span>
-                            <span class="badge badge-secondary badge-warning">
+                            </a>
+                        </span>
+                        <span class="badge badge-secondary badge-warning">
+                            <a href="" style="color:black !important;">
                                 <h6>Js</h6>
-                            </span>
-                            <span class="badge badge-secondary">
+                            </a>
+                        </span>
+                        <span class="badge badge-secondary">
+                            <a href="" style="color:white !important;">
                                 <h6>Bootstrap</h6>
-                            </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--FIm navegação de tags-->
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide " style="padding-top: 2%" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="perguntaforum.html">
+                                <img class="d-block w-100" src="imgs/slideforum1.png" alt="First slide" style="height: 200px;">
+                            </a>
                         </div>
-                        <span style="font-size: 15px;">Respondido %</span>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 82%" aria-valuenow="100" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                        <div class="carousel-item">
+                            <a href="perguntaforum.html">
+                                <img class="d-block w-100" src="imgs/slideforum2.png" alt="Second slide" style="height: 200px;">
+                            </a>
                         </div>
-                        <div style="margin-top: 5px;">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                </div>
+
+                <div class="col-md-8 col-sm-8 col-xs-3">
+                    <div class="card afastamento">
+                        <div class="card-header">
+                            <a href="user1.html" class="outroslinks">
+                                <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 50px;">Aninha</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Usar o Bootstrap</h5>
+                            <p class="card-text">Alguém pode me ajudar a usar o bootstrap?</p>
+                            <div>
+                                <span class="badge badge-secondary  badge-info">
+                                    <h6>Html</h6>
+                                </span>
+                                <span class="badge badge-secondary  badge-light">
+                                    <h6>Css</h6>
+                                </span>
+                                <span class="badge badge-secondary badge-warning">
+                                    <h6>Js</h6>
+                                </span>
+                                <span class="badge badge-secondary">
+                                    <h6>Bootstrap</h6>
+                                </span>
+                            </div>
+                            <span style="font-size: 15px;">Respondido %</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 82%" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="perguntaforum.html" class="btn btn-outline-secondary">
+                                    <i class="fas fa-door-open"> Abrir Forum</i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-bookmark" onclick=""> Marcar</i>
+                                </a>
+                                <span style="margin-left: 5px; font-size: 20px; ">votar</span>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-up"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <span>2 dias trás</span>
+                                <span>| 3 respostas</span>
+                                <span>| 4 favoritos</span>
+                                <span>| 12 Marcações</span>
+                                <span>| 1 deslike</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card afastamento">
+                        <div class="card-header">
+                            <a href="user1.html" class="outroslinks">
+                                <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 50px;">Aninha</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Usar o Bootstrap</h5>
+                            <p class="card-text">Alguém pode me ajudar a usar o bootstrap?</p>
+                            <div>
+                                <span class="badge badge-secondary badge-info">
+                                    <h6>Html</h6>
+                                </span>
+                                <span class="badge badge-secondary badge-light">
+                                    <h6>Css</h6>
+                                </span>
+                                <span class="badge badge-secondary badge-warning">
+                                    <h6>Js</h6>
+                                </span>
+                                <span class="badge badge-secondary">
+                                    <h6>Bootstrap</h6>
+                                </span>
+                            </div>
+                            <span style="font-size: 15px;">Respondido %</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
                             <a href="perguntaforum.html" class="btn btn-outline-secondary">
                                 <i class="fas fa-door-open"> Abrir Forum</i>
                             </a>
@@ -135,141 +218,91 @@
                         </div>
                         <div class="card-footer text-muted">
                             <span>2 dias trás</span>
-                            <span>| 3 respostas</span>
+                            <span>| 32 respostas</span>
                             <span>| 4 favoritos</span>
                             <span>| 12 Marcações</span>
                             <span>| 1 deslike</span>
                         </div>
                     </div>
+                    <!--Fim div col-->
                 </div>
-
-                <div class="card afastamento">
-                    <div class="card-header">
-                        <a href="user1.html" class="outroslinks">
-                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 50px;">Aninha</a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Usar o Bootstrap</h5>
-                        <p class="card-text">Alguém pode me ajudar a usar o bootstrap?</p>
-                        <div>
-                            <span class="badge badge-secondary badge-info">
-                                <h6>Html</h6>
-                            </span>
-                            <span class="badge badge-secondary badge-light">
-                                <h6>Css</h6>
-                            </span>
-                            <span class="badge badge-secondary badge-warning">
-                                <h6>Js</h6>
-                            </span>
-                            <span class="badge badge-secondary">
-                                <h6>Bootstrap</h6>
-                            </span>
-                        </div>
-                        <span style="font-size: 15px;">Respondido %</span>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="perguntaforum.html" class="btn btn-outline-secondary">
-                            <i class="fas fa-door-open"> Abrir Forum</i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary">
-                            <i class="fas fa-bookmark" onclick=""> Marcar</i>
-                        </a>
-                        <span style="margin-left: 5px; font-size: 20px; ">votar</span>
-                        <a href="#" class="btn btn-outline-secondary">
-                            <i class="fas fa-arrow-alt-circle-up"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <span>2 dias trás</span>
-                        <span>| 32 respostas</span>
-                        <span>| 4 favoritos</span>
-                        <span>| 12 Marcações</span>
-                        <span>| 1 deslike</span>
-                    </div>
-                </div>
-                <!--Fim div col-->
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-3" style="margin-top: 35px;">
-                <div class="card">
-                    <h5 class="card-header">
-                        <i class="fas fa-globe-americas"></i> Online</h5>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="user1.html" class="outroslinks">
-                                    <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">I'm noob</a>
-                                <i class="fas fa-toggle-on"></i>
-                                <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                <p class="badge badge-pill badge-success">Ativo há 2 min</p>
-                                <span>
-                                    <i class="fas fa-envelope-open"></i>
-                                    <span class="badge badge-secondary">3</span>
-                                </span>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="user1.html" class="outroslinks">
-                                    <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Killboy </a>
-                                <i class="fas fa-toggle-on"></i>
-                                <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                <p class="badge badge-pill badge-success">Ativo há 3 min</p>
-                                <span>
-                                    <i class="fas fa-comments"></i>
-                                    <span class="badge badge-secondary">1</span>
-                                </span>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="user1.html" class="outroslinks">
-                                    <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">Luckhaus </a>
-                                <i class="fas fa-toggle-on"></i>
-                                <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                <p class="badge badge-pill badge-success">Ativo há 8 min</p>
-                                <span>
-                                    <i class="fas fa-quote-left"></i>
-                                    <span class="badge badge-secondary">1</span>
-                                </span>
+                <!--Amigos Online-->
+                <div class="col-md-4 col-sm-4 col-xs-3" style="margin-top: 35px;">
+                    <div class="card">
+                        <h5 class="card-header">
+                            <i class="fas fa-user-friends "> </i> Amigos</h5>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <a href="user1.html" class="outroslinks">
-                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Callmer </a>
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">I'm noob</a>
                                     <i class="fas fa-toggle-on"></i>
                                     <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                    <p class="badge badge-pill badge-success">Ativo há 14 min</p>
+                                    <p class="badge badge-pill badge-success">Ativo há 2 min</p>
+                                    <span>
+                                        <i class="fas fa-envelope-open"></i>
+                                        <span class="badge badge-secondary">3</span>
+                                    </span>
                                 </li>
                                 <li class="list-group-item">
                                     <a href="user1.html" class="outroslinks">
-                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">Mininu Neutro </a>
-                                    <i class="fas fa-toggle-off"></i>
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Killboy </a>
+                                    <i class="fas fa-toggle-on"></i>
                                     <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                    <p class="badge badge-pill badge-warning">Online há 5 min</p>
+                                    <p class="badge badge-pill badge-success">Ativo há 3 min</p>
+                                    <span>
+                                        <i class="fas fa-comments"></i>
+                                        <span class="badge badge-secondary">1</span>
+                                    </span>
                                 </li>
                                 <li class="list-group-item">
                                     <a href="user1.html" class="outroslinks">
-                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">José </a>
-                                    <i class="fas fa-toggle-off"></i>
+                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">Luckhaus </a>
+                                    <i class="fas fa-toggle-on"></i>
                                     <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                    <p class="badge badge-pill badge-warning">Online há 9 min</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="user1.html" class="outroslinks">
-                                        <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Mininu Ney </a>
-                                    <i class="fas fa-toggle-off"></i>
-                                    <a href="mensagens.html" class="badge badge-light">Mensagem</a>
-                                    <p class="badge badge-pill badge-warning">Online há 12 min</p>
+                                    <p class="badge badge-pill badge-success">Ativo há 8 min</p>
+                                    <span>
+                                        <i class="fas fa-quote-left"></i>
+                                        <span class="badge badge-secondary">1</span>
+                                    </span>
+                                    <li class="list-group-item">
+                                        <a href="user1.html" class="outroslinks">
+                                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Callmer </a>
+                                        <i class="fas fa-toggle-on"></i>
+                                        <a href="mensagens.html" class="badge badge-light">Mensagem</a>
+                                        <p class="badge badge-pill badge-success">Ativo há 14 min</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="user1.html" class="outroslinks">
+                                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa2.jpg" alt="Perfil" style="width: 35px;">Mininu Neutro </a>
+                                        <i class="fas fa-toggle-off"></i>
+                                        <a href="mensagens.html" class="badge badge-light">Mensagem</a>
+                                        <p class="badge badge-pill badge-warning">Online há 5 min</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="user1.html" class="outroslinks">
+                                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">José </a>
+                                        <i class="fas fa-toggle-off"></i>
+                                        <a href="mensagens.html" class="badge badge-light">Mensagem</a>
+                                        <p class="badge badge-pill badge-warning">Online há 9 min</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="user1.html" class="outroslinks">
+                                            <img class=" perfilpostagem outroslinks" src="imgs/pessoa1.png" alt="Perfil" style="width: 35px;">Mininu Ney </a>
+                                        <i class="fas fa-toggle-off"></i>
+                                        <a href="mensagens.html" class="badge badge-light">Mensagem</a>
+                                        <p class="badge badge-pill badge-warning">Online há 12 min</p>
 
-                                </li>
-                        </ul>
+                                    </li>
+                            </ul>
+                        </div>
                     </div>
+                    <!--Fim div col-->
                 </div>
-                <!--Fim div col-->
+                <!--Fim div row-->
             </div>
-            <!--Fim div row-->
+            <!--Fim do container-->
         </div>
-        <!--Fim do container-->
-    </div>
-</body>
+    </body>
 
 </html>

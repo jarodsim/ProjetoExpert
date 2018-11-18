@@ -18,6 +18,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -58,18 +59,23 @@
     <form method="POST">
       <div class="form-group">
         <label for="exampleInputEmail1">Endereço de Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu usuário ou Email">
+        <input type="email" class="form-control" id="exampleInputEmail1" id="campoemail" aria-describedby="emailHelp" placeholder="Seu usuário ou Email">
         <small id="emailHelp" class="form-text text-muted">"Nunca esqueça de sua toalha!".</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        <input type="password" class="form-control" id="exampleInputPassword1" id="camposenha" placeholder="Senha">
       </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Continuar conectado</label>
       </div>
-      <a href="forum.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Entrar</a>
+      <div class="card"> 
+         <p ><a href="cadastrar.html" id="cadastrarNovoUser"></a></p>
+        </div>
+        <hr>
+    
+      <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true" onclick="validarEmail()">Entrar</a>
     </form>
 
     <div class="row">
